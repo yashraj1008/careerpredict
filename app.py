@@ -474,6 +474,14 @@ def main():
   #       add_data(blog_author,blog_title,blog_article,blog_post_date)
   #       st.success("Post::'{}' Saved".format(blog_title))
 
+  html3="""
 
-if __name__ == "__main__":
-    app.run(debug=True)
+    <div style="color:yellow; margin:80px; text-align:center;">
+      Developed with ❤️ by <a href=https://hrugved06.github.io/Portfolio-Hrugved-Kolhe/> Hrugved Kolhe</a>
+    </div>
+      """
+
+  st.markdown(html3,unsafe_allow_html=True)
+
+if __name__=='__main__':
+    main()
