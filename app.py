@@ -1,16 +1,11 @@
-# **1. Importing Necessary Libraries** 📚
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import pickle
+import pickle 
 import time
 import streamlit as st
 from db import *
-
-
-model = pickle.load(open('weights.pkl','rb'))
 
 pickleFile=open("weights.pkl","rb")
 regressor=pickle.load(pickleFile) # our model
@@ -477,6 +472,14 @@ def main():
   #       add_data(blog_author,blog_title,blog_article,blog_post_date)
   #       st.success("Post::'{}' Saved".format(blog_title))
 
+  html3="""
+
+    <div style="color:yellow; margin:80px; text-align:center;">
+      Developed with ❤️ by <a href=https://hrugved06.github.io/Portfolio-Hrugved-Kolhe/> Hrugved Kolhe</a>
+    </div>
+      """
+
+  st.markdown(html3,unsafe_allow_html=True)
 
 if __name__=='__main__':
     main()
