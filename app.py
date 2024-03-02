@@ -4,14 +4,16 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import pickle 
+import pickle
 import time
 import streamlit as st
 from db import *
 
 
-pickleFile=open("weights.pkl","rb")
-regressor=pickle.load(pickleFile) # our model
+model = pickle.load(open('weights.pkl','rb'))
+
+# pickleFile=open("weights.pkl","rb")
+# regressor=pickle.load(pickleFile) # our model
 
 # **2. Loading Dataset**
 
@@ -474,7 +476,6 @@ def main():
   #     if st.button("Add"):
   #       add_data(blog_author,blog_title,blog_article,blog_post_date)
   #       st.success("Post::'{}' Saved".format(blog_title))
-
 
 
 if __name__ == "__main__":
