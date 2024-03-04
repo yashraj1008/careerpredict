@@ -12,6 +12,6 @@ pandas
 flasgger
 streamlit
 seaborn
-sklearn
+
 
 
