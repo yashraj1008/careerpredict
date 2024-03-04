@@ -7,10 +7,10 @@ import time
 import streamlit as st
 from db import *
 
+pickleFile = "C:\Users\yashr\OneDrive\Desktop\cp2\Career-Prediction-System\weights.pkl"
 
-
-model = pickleFile=open("weights.pkl","rb")
-regressor=pickle.load(pickleFile) # our model
+# model = pickleFile=open("weights.pkl","rb")
+# regressor=pickle.load(pickleFile) # our model
 
 # **2. Loading Dataset**
 
