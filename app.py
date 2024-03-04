@@ -7,7 +7,9 @@ import time
 import streamlit as st
 from db import *
 
-pickleFile=open("weights.pkl","rb")
+
+
+model = pickleFile=open("weights.pkl","rb")
 regressor=pickle.load(pickleFile) # our model
 
 # **2. Loading Dataset**
